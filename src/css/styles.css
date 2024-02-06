@@ -5,8 +5,7 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./1-timer.css');
-@import url('./2-snackbar.css');
+@import url('./lightbox.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -28,6 +27,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
   min-height: 100vh;
   gap: 25px;
   font-size: 50px;
