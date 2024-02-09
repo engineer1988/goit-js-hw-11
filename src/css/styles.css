@@ -6,7 +6,6 @@
 */
 @import url('./reset.css');
 @import url('./lightbox.css');
-@import url('./test.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -56,4 +55,7 @@
 
 .index-list-item2:hover {
   transform: scale(1.1);
+}
+.title {
+  margin-bottom: 40px;
 }

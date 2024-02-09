@@ -31,6 +31,18 @@ function fetchUsers() {
 }
 
 function renderUsers(images) {
+  if (images.hits.length === 0) {
+    iziToast.error({
+      backgroundColor: 'rgb(239, 64, 64)',
+      titleSize: '16px',
+      titleColor: 'rgb(250, 250, 251)',
+      messageColor: 'rgb(250, 250, 251)',
+      title: 'Error',
+      position: 'topRight',
+      message: 'Sorry, there are no images matching your search query.',
+    });
+  }
+
   const markup = images.hits
     .map(image => {
       return `
