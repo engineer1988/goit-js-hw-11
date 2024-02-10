@@ -1,7 +1,7 @@
 body {
   margin: 0;
 }
-p {
+.go-back {
   position: relative;
   top: 36px;
   right: -30px;
