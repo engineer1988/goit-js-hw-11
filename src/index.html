@@ -2,17 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-js-hw-11</title>
+    <title>Lightbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="index-list">
-      <p class="title">Are you ready?</p>
-      <ul class="index-row">
-        <li class="index-list-item1"><a href="./lightbox.html">Lightbox</a></li>
-      </ul>
+    <div class="header">
+      <form class="form">
+        <input
+          class="input"
+          type="text"
+          placeholder="Search images..."
+          id="datetime-picker"
+          name="search"
+          required
+        />
+        <button class="button" type="submit" data-start>Search</button>
+      </form>
     </div>
+
+    <div class="loader"></div>
+
+    <ul class="gallery"></ul>
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>

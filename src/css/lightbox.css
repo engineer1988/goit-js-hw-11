@@ -1,11 +1,6 @@
 body {
   margin: 0;
 }
-.go-back {
-  position: relative;
-  top: 36px;
-  right: -30px;
-}
 .form {
   display: flex;
   gap: 8px;
