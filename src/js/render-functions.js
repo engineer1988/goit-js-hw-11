@@ -1,5 +1,7 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+const gallery = document.querySelector('.gallery');
+const loader = document.querySelector('.loader');
 
 export default function renderImages(images) {
   if (images.hits.length === 0) {
@@ -41,5 +43,7 @@ export default function renderImages(images) {
           </li>`;
     })
     .join('');
-  return markup;
+  gallery.innerHTML = '';
+  gallery.innerHTML = markup;
+  loader.classList.add('hide');
 }
