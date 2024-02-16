@@ -16,7 +16,16 @@ form.addEventListener('submit', e => {
   fetchImages(e)
     .then(images => renderImages(images))
     .then(markup => viewLightbox(markup))
-    .catch(error => console.log(error));
+    .catch(error =>
+      iziToast.error({
+        maxWidth: '432px',
+        messageColor: 'rgb(250, 250, 251)',
+        messageSize: '16px',
+        backgroundColor: 'rgb(239, 64, 64)',
+        position: 'topRight',
+        message: `${error}`,
+      })
+    );
   form.reset();
 });
 
