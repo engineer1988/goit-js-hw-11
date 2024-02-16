@@ -6,8 +6,15 @@ import renderImages from './js/render-functions';
 const form = document.querySelector('.form');
 const gallery = document.querySelector('.gallery');
 const loader = document.querySelector('.loader');
+const options = {
+  captionSelector: 'img',
+  captionsData: 'alt',
+  captionDelay: 250,
+};
 
 loader.classList.add('hide');
+
+const lightbox = new SimpleLightbox('.gallery a', options);
 
 form.addEventListener('submit', e => {
   e.preventDefault();
@@ -33,13 +40,6 @@ function viewLightbox(markup) {
   gallery.innerHTML = '';
   gallery.innerHTML = markup;
 
-  const options = {
-    captionSelector: 'img',
-    captionsData: 'alt',
-    captionDelay: 250,
-  };
-
-  const lightbox = new SimpleLightbox('.gallery a', options);
   lightbox.refresh();
   loader.classList.add('hide');
 }

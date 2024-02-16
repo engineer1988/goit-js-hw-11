@@ -1,5 +1,6 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+// const gallery = document.querySelector('.gallery');
 
 export default function renderImages(images) {
   if (images.hits.length === 0) {
@@ -41,5 +42,8 @@ export default function renderImages(images) {
           </li>`;
     })
     .join('');
+  // gallery.innerHTML = '';
+  // gallery.innerHTML = markup;
+
   return markup;
 }
