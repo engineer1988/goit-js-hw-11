@@ -1,6 +1,5 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-import 'css-loader';
 import fetchImages from './js/pixabay-api';
 import renderImages from './js/render-functions';
 
